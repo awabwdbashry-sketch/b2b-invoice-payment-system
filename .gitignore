@@ -1,0 +1,28 @@
+﻿# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+storage/logs/
+
+# Runtime / generated files
+*.cache
+*.tmp
+
+# User uploads
+uploads/*
+
+# IDE / editor
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# PHP local files
+.phpunit.result.cache
