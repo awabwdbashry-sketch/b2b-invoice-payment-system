@@ -1,128 +1,235 @@
-B2B Invoice & Payment Tracking System
+🧾 B2B Invoice & Payment Tracking System
 
-A modern web-based system for managing B2B customers, invoices, payments, due dates, PDF invoices, email delivery, notifications, reports, and audit logs.
-
-🇬🇧 English
-
-📌 Overview
-
-B2B Invoice & Payment Tracking System is a web-based invoice and payment management application built with PHP, MySQL, and Bootstrap 5.
+نظام متكامل لإدارة الفواتير والمدفوعات للشركات (B2B)
 
 
 
-The system is designed to help businesses manage their customers, create and track invoices, record full or partial payments, monitor overdue invoices, generate PDF invoices, send invoices by email, and maintain a detailed audit trail.
+PHP (image)
+MySQL (image)
+Bootstrap (image)
+License (image)
+
+🇸🇩 العربية
+
+📌 عن المشروع
+
+B2B Invoice & Payment Tracking System هو نظام ويب لإدارة الفواتير والمدفوعات بين الشركات، تم تطويره باستخدام PHP وMySQL وBootstrap 5 بدون Framework أو Build Step.
 
 
 
-The application uses a clean Arabic RTL interface while keeping internal system status codes and technical identifiers in English.
+النظام مصمم لتوفير طريقة منظمة لإدارة:
 
-✨ Features
 
-👥 Customer management
 
-🧾 Invoice creation and management
+🏢 العملاء والشركات
 
-📦 Invoice line items
+🧾 الفواتير
 
-💰 Full and partial payments
+💰 المدفوعات الكاملة والجزئية
 
-📅 Invoice due-date tracking
+📅 تواريخ الاستحقاق
 
-⚠️ Automatic overdue detection
+⚠️ الفواتير المتأخرة
 
-📄 PDF invoice generation
+📄 إنشاء فواتير PDF
 
-📧 Send invoices by email using SMTP
+📧 إرسال الفواتير عبر البريد الإلكتروني
 
-🔔 Notifications
+🔔 الإشعارات
 
-📊 Dashboard and financial reports
+📊 التقارير
 
-📥 CSV report export
+👥 المستخدمين والصلاحيات
 
-👤 Role-Based Access Control (RBAC)
+📝 سجل العمليات والتدقيق Audit Trail
 
-🔐 Permission-based authorization
+⚙️ إعدادات النظام
 
-📝 Audit trail and activity logging
+✨ أهم المميزات
 
-⚙️ Application settings
+🧾 إدارة الفواتير
 
-🌐 Arabic / RTL user interface
+إنشاء وتعديل وعرض الفواتير.
 
-🗄️ MySQL database with UTF-8 / utf8mb4
+إضافة أكثر من منتج أو خدمة للفاتورة.
 
-📱 Responsive Bootstrap 5 interface
+حساب الإجمالي والضريبة تلقائيًا.
 
-🛠️ Technology Stack
+دعم أرقام فواتير منظمة.
 
-TechnologyPurpose
+إصدار وإلغاء الفواتير.
 
-PHP 8.3+
+متابعة حالة الفاتورة.
 
-Backend / Server-side application
+اكتشاف الفواتير المتأخرة تلقائيًا.
 
-MySQL
+💰 إدارة المدفوعات
 
-Database
+تسجيل المدفوعات.
 
-Bootstrap 5
+دعم المدفوعات الجزئية.
 
-User interface
+دعم أكثر من دفعة للفاتورة الواحدة.
 
-Bootstrap RTL
+حساب المبلغ المدفوع والمتبقي.
 
-Arabic / RTL layout
+تحديث حالة الفاتورة بناءً على المدفوعات.
 
-TCPDF
+📄 فواتير PDF
 
-PDF invoice generation
+إنشاء نسخة PDF من الفاتورة.
 
-SMTP
+دعم اللغة العربية وRTL.
 
-Email delivery
+استخدام TCPDF لإنشاء ملفات PDF.
 
-HTML5
+إمكانية تحميل الفاتورة أو استخدامها للإرسال عبر البريد.
 
-Application structure
+📧 إرسال الفواتير عبر البريد
 
-CSS3
+إرسال الفاتورة مباشرة للعميل.
 
-Styling
+إرفاق نسخة PDF من الفاتورة.
 
-JavaScript
+دعم SMTP.
 
-Client-side interactions
+يعمل مع Gmail وOutlook وSendGrid وMailgun وغيرها.
 
-🏗️ Project Structure
+👥 المستخدمون والصلاحيات
+
+النظام يحتوي على نظام Role-Based Access Control (RBAC).
+
+
+
+الأدوار الأساسية:
+
+
+
+👑 Admin
+
+💼 Finance
+
+👤 Staff
+
+
+
+مع نظام صلاحيات مستقل للتحكم في العمليات التي يستطيع كل مستخدم تنفيذها.
+
+📊 التقارير
+
+تقارير الفواتير.
+
+تقارير المدفوعات.
+
+متابعة المبالغ المستحقة.
+
+متابعة الفواتير المتأخرة.
+
+تصدير البيانات بصيغة CSV.
+
+دعم البيانات العربية باستخدام UTF-8 BOM.
+
+🔔 الإشعارات
+
+إشعارات مرتبطة بالفواتير والمدفوعات.
+
+تنبيهات للفواتير المستحقة والمتأخرة.
+
+📝 Audit Trail
+
+يتم تسجيل العمليات المهمة داخل النظام لمتابعة:
+
+
+
+المستخدم الذي نفذ العملية.
+
+نوع العملية.
+
+التاريخ والوقت.
+
+وصف العملية.
+
+🛠️ التقنيات المستخدمة
+
+التقنيةالاستخدام
+
+🐘 PHP 8.3+
+
+Backend
+
+🗄️ MySQL
+
+قاعدة البيانات
+
+🎨 Bootstrap 5 RTL
+
+واجهة المستخدم
+
+📄 TCPDF
+
+إنشاء ملفات PDF
+
+📧 PHPMailer
+
+إرسال البريد الإلكتروني
+
+🔐 PHP Sessions
+
+Authentication
+
+🛡️ RBAC
+
+إدارة الصلاحيات
+
+🌍 UTF-8 / utf8mb4
+
+دعم اللغة العربية
+
+📁 هيكل المشروع
 
 b2b-invoice-payment-system/
 │
-├── app/
-│   ├── auth/
-│   ├── customers/
-│   ├── invoices/
-│   ├── payments/
-│   ├── reports/
-│   ├── notifications/
-│   ├── admin/
-│   ├── settings/
-│   ├── config/
-│   ├── database/
-│   ├── includes/
-│   └── ...
-│
+├── admin/                  # 👑 إدارة المستخدمين وسجل العمليات
+├── auth/                   # 🔐 تسجيل الدخول والخروج
+├── config/                 # ⚙️ إعدادات النظام وملف البيئة
+├── customers/              # 🏢 إدارة العملاء
+├── database/               # 🗄️ ملفات قاعدة البيانات
+├── includes/               # 🧠 الخدمات والمنطق المشترك
+├── invoices/               # 🧾 إدارة الفواتير
+├── notifications/          # 🔔 الإشعارات
+├── payments/               # 💰 إدارة المدفوعات
+├── reports/                # 📊 التقارير
+├── scripts/                # 🛠️ Scripts مساعدة
+├── settings/               # ⚙️ إعدادات النظام
+├── uploads/                # 📂 ملفات الرفع المحلية
 ├── vendor/
-│   └── tcpdf/
+│   ├── phpmailer/          # 📧 PHPMailer
+│   └── tcpdf/              # 📄 TCPDF
 │
-├── .env.example
 ├── .gitignore
+├── index.php
 └── README.md
 
 
-🗄️ Main Database Modules
+🗄️ قاعدة البيانات
 
-The application uses MySQL with the following main areas:
+يحتوي المشروع على ملفات SQL جاهزة:
+
+database/
+├── schema.sql
+├── seed.sql
+├── migrate_utf8mb4.sql
+└── schema.sqlite.sql
+
+
+MySQL
+
+الاستخدام الأساسي للنظام يكون مع:
+
+Database: b2b_invoice
+
+
+ويحتوي النظام على جداول رئيسية مثل:
 
 
 
@@ -142,146 +249,66 @@ invoice_items
 
 payments
 
-invoice_number_sequences
-
 notifications
 
 audit_logs
 
 settings
 
+🚀 تشغيل المشروع محليًا
 
+1️⃣ المتطلبات
 
-The database uses utf8mb4 to properly support Arabic and multilingual data.
-
-🔐 Authentication & Authorization
-
-The system includes role-based access control with separate permissions for different types of users.
-
-
-
-Default application roles include:
+تأكد من توفر:
 
 
 
-Admin
+PHP 8.3 أو أحدث
 
-Finance
+MySQL 8 أو متوافق
 
-Staff
+Apache / WAMP / XAMPP
 
+متصفح حديث
 
+2️⃣ إنشاء قاعدة البيانات
 
-Permissions control access to application areas and actions instead of relying only on the user's role name.
-
-💳 Invoice & Payment Tracking
-
-Invoices support:
-
-
-
-Multiple line items
-
-Automatic totals
-
-Tax calculation
-
-Due dates
-
-Partial payments
-
-Multiple payment records
-
-Remaining balance tracking
-
-Payment status
-
-Overdue detection
-
-
-
-This allows the system to track an invoice throughout its complete payment lifecycle.
-
-📄 PDF Invoices
-
-Invoices can be generated as PDF documents using TCPDF.
-
-
-
-The PDF functionality supports Arabic invoice content and is designed to be used for both downloading and email delivery.
-
-📧 Email Invoice Delivery
-
-The system supports sending invoices by email through a standard SMTP server.
-
-
-
-SMTP configuration is stored in the local .env file.
-
-
-
-Example:
-
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=your-email@gmail.com
-MAIL_PASSWORD=your-app-password
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=your-email@gmail.com
-MAIL_FROM_NAME="B2B Invoice & Payment Tracking System"
-
-
-⚠️ Never commit the real .env file or SMTP credentials to GitHub.
-
-⚙️ Local Installation
-
-1. Clone the repository
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-
-
-2. Open the project in your local web server
-
-For WAMP, place the project inside:
-
-C:\wamp64\www\
-
-
-For example:
-
-C:\wamp64\www\b2b-invoice-payment-system
-
-
-3. Create the database
-
-Create a MySQL database named:
+من phpMyAdmin قم بإنشاء:
 
 b2b_invoice
 
 
-Then import the project's database schema and seed files using phpMyAdmin.
+ثم قم باستيراد:
 
-4. Configure environment variables
-
-Copy:
-
-.env.example
+database/schema.sql
 
 
-to:
+وبعدها:
+
+database/seed.sql
+
+
+3️⃣ إعداد البيئة
+
+انسخ:
+
+config/.env.example
+
+
+إلى:
 
 .env
 
 
-Then configure the database and mail settings.
+ثم ضع إعدادات قاعدة البيانات الخاصة بك.
 
 
 
-Example:
+مثال:
 
 APP_ENV=local
 APP_NAME="B2B Invoice & Payment Tracking System"
-APP_URL=http://localhost/b2b-invoice-payment-system/app
+APP_URL=http://localhost/b2b-invoice
 APP_TIMEZONE=Africa/Cairo
 
 DB_DRIVER=mysql
@@ -291,425 +318,444 @@ DB_NAME=b2b_invoice
 DB_USER=root
 DB_PASS=
 
-MAIL_HOST=
+
+🔐 مهم: لا ترفع ملف .env إلى GitHub. استخدم config/.env.example كقالب فقط.
+
+📧 إعداد البريد الإلكتروني
+
+لتمكين إرسال الفواتير عبر البريد، أضف إعدادات SMTP داخل .env.
+
+
+
+مثال عام:
+
+MAIL_HOST=smtp.example.com
 MAIL_PORT=587
-MAIL_USERNAME=
-MAIL_PASSWORD=
+MAIL_USERNAME=your-email@example.com
+MAIL_PASSWORD=your-app-password
 MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=
+MAIL_FROM_ADDRESS=your-email@example.com
 MAIL_FROM_NAME="B2B Invoice & Payment Tracking System"
 
 
-5. Open the application
+🔐 لا تضع كلمات المرور أو App Passwords الحقيقية داخل GitHub.
 
-Open the application through your local WAMP server.
+🌐 فتح النظام
 
-
-
-Example:
+بعد تشغيل Apache وMySQL:
 
 http://localhost/b2b-invoice-payment-system/app
 
 
-🔒 Security
+قد يختلف الرابط حسب مكان وضع المشروع داخل WAMP.
 
-Before deploying the application:
+🔐 الأمان
 
+تم تجهيز المشروع مع مراعاة عدد من ممارسات الأمان، منها:
 
 
-Never commit .env
 
-Never commit SMTP passwords
+🔒 عدم رفع .env إلى Git.
 
-Never commit Gmail App Passwords
+🔑 استخدام Password Hashing للمستخدمين.
 
-Never expose database credentials
+🛡️ نظام صلاحيات RBAC.
 
-Use HTTPS in production
+🧹 Server-side validation.
 
-Use strong production passwords
+🗄️ استخدام MySQL وPrepared Statements.
 
-Change demo credentials before production deployment
+📝 تسجيل العمليات المهمة في Audit Log.
 
-Keep dependencies updated
+🔐 حماية العمليات حسب صلاحيات المستخدم.
 
-📋 Current Status
+📌 حالة المشروع
 
-The core application includes:
+Status: Active Development 🚧
 
 
 
-Customer management
+المشروع يعمل محليًا ويحتوي على الوظائف الأساسية لإدارة:
 
-Invoice management
+العملاء → الفواتير → المدفوعات → التقارير → PDF → البريد الإلكتروني → الصلاحيات → سجل العمليات
 
-Payment tracking
+👨‍💻 المطور
 
-Partial payments
+Awab Bashary | AwabBuilds
 
-PDF generation
 
-Email invoice delivery
 
-Notifications
+💻 Software Developer
+🌐 Web & Flutter Developer
+🤖 AI Developer
+📱 Building Modern Web, Mobile & AI Applications
 
-Reports
+📜 الترخيص
 
-CSV export
+هذا المشروع مرخص بموجب MIT License.
 
-RBAC
+🇬🇧 English
 
-Audit logging
+📌 About
 
-Arabic RTL interface
+B2B Invoice & Payment Tracking System is a web-based application designed to manage business-to-business invoices and payments.
 
-MySQL database integration
 
-🚀 Project Status
 
-Development / Portfolio Project
+The system is built with PHP, MySQL, Bootstrap 5, PHPMailer, and TCPDF, without a framework or build step.
 
 
 
-The system is being developed as a practical B2B financial management application with a focus on invoice tracking, payment management, Arabic RTL support, and real-world business workflows.
+It provides an organized workflow for managing:
 
-🇸🇩 العربية
 
-📌 نبذة عن المشروع
 
-نظام إدارة ومتابعة فواتير ومدفوعات الشركات (B2B Invoice & Payment Tracking System) هو تطبيق ويب لإدارة العملاء والفواتير والمدفوعات ومتابعة المبالغ المستحقة والمتأخرة.
+🏢 Customers
 
+🧾 Invoices
 
+💰 Full and partial payments
 
-تم بناء النظام باستخدام PHP وMySQL وBootstrap 5، مع واجهة مستخدم عربية تدعم اتجاه RTL.
+📅 Due dates
 
+⚠️ Overdue invoices
 
+📄 PDF invoices
 
-يسمح النظام بإنشاء الفواتير وإدارتها، تسجيل المدفوعات الكاملة والجزئية، إنشاء فواتير PDF، إرسال الفواتير عبر البريد الإلكتروني، متابعة الفواتير المتأخرة، وإدارة الصلاحيات وسجل العمليات.
+📧 Email invoice delivery
 
-✨ المميزات
+🔔 Notifications
 
-👥 إدارة العملاء
+📊 Reports
 
-🧾 إنشاء وإدارة الفواتير
+👥 Users and permissions
 
-📦 إضافة عناصر متعددة داخل الفاتورة
+📝 Audit logs
 
-💰 تسجيل المدفوعات الكاملة والجزئية
+⚙️ System settings
 
-📅 متابعة تواريخ استحقاق الفواتير
+✨ Features
 
-⚠️ اكتشاف الفواتير المتأخرة
+🧾 Invoice Management
 
-📄 إنشاء فواتير PDF
+Create, edit, view, issue, and cancel invoices.
 
-📧 إرسال الفواتير عبر البريد الإلكتروني
+Add multiple line items.
 
-🔔 نظام إشعارات
+Automatic subtotal, tax, and total calculations.
 
-📊 لوحة تحكم وتقارير مالية
+Structured invoice numbering.
 
-📥 تصدير التقارير بصيغة CSV
+Invoice status tracking.
 
-👤 نظام صلاحيات مبني على الأدوار RBAC
+Automatic overdue detection.
 
-🔐 صلاحيات تفصيلية للمستخدمين
+💰 Payment Tracking
 
-📝 سجل كامل للعمليات Audit Log
+Record payments.
 
-⚙️ إعدادات النظام
+Support partial payments.
 
-🌐 واجهة عربية RTL
+Support multiple payments per invoice.
 
-🗄️ قاعدة بيانات MySQL تدعم utf8mb4
+Track paid and remaining amounts.
 
-📱 تصميم متجاوب مع الشاشات المختلفة
+Automatically update invoice payment status.
 
-🛠️ التقنيات المستخدمة
+📄 PDF Invoices
 
-التقنيةالاستخدام
+Generate invoice PDFs.
 
-PHP 8.3+
+Arabic / RTL support.
 
-البرمجة الخلفية
+TCPDF-based PDF generation.
 
-MySQL
+Download and email PDF invoices.
 
-قاعدة البيانات
+📧 Email Delivery
 
-Bootstrap 5
+Send invoices directly to customers.
 
-واجهة المستخدم
+Attach generated PDF invoices.
 
-Bootstrap RTL
+SMTP support.
 
-دعم اللغة العربية واتجاه RTL
+Compatible with Gmail, Outlook, SendGrid, Mailgun, and other SMTP providers.
 
-TCPDF
+👥 Role-Based Access Control
 
-إنشاء ملفات PDF
+The system includes role-based permissions with:
 
-SMTP
 
-إرسال البريد الإلكتروني
 
-HTML5
+👑 Admin
 
-هيكلة الصفحات
+💼 Finance
 
-CSS3
+👤 Staff
 
-التنسيق
 
-JavaScript
 
-التفاعلات داخل الواجهة
+Each role can have its own set of permissions.
 
-🏗️ هيكل المشروع
+📊 Reports
+
+Invoice reports.
+
+Payment reports.
+
+Outstanding amounts.
+
+Overdue invoices.
+
+CSV export.
+
+UTF-8 support for Arabic data.
+
+🔔 Notifications
+
+The system provides notifications related to invoices, payments, due dates, and overdue items.
+
+📝 Audit Trail
+
+Important actions are recorded with:
+
+
+
+User
+
+Action
+
+Date and time
+
+Description
+
+🛠️ Tech Stack
+
+TechnologyPurpose
+
+🐘 PHP 8.3+
+
+Backend
+
+🗄️ MySQL
+
+Database
+
+🎨 Bootstrap 5 RTL
+
+User Interface
+
+📄 TCPDF
+
+PDF Generation
+
+📧 PHPMailer
+
+Email / SMTP
+
+🔐 PHP Sessions
+
+Authentication
+
+🛡️ RBAC
+
+Authorization
+
+🌍 UTF-8 / utf8mb4
+
+Arabic Support
+
+📁 Project Structure
 
 b2b-invoice-payment-system/
 │
-├── app/
-│   ├── auth/
-│   ├── customers/
-│   ├── invoices/
-│   ├── payments/
-│   ├── reports/
-│   ├── notifications/
-│   ├── admin/
-│   ├── settings/
-│   ├── config/
-│   ├── database/
-│   ├── includes/
-│   └── ...
-│
+├── admin/                  # 👑 Administration
+├── auth/                   # 🔐 Authentication
+├── config/                 # ⚙️ Configuration
+├── customers/              # 🏢 Customer management
+├── database/               # 🗄️ Database scripts
+├── includes/               # 🧠 Shared services
+├── invoices/               # 🧾 Invoice management
+├── notifications/          # 🔔 Notifications
+├── payments/               # 💰 Payment management
+├── reports/                # 📊 Reports
+├── scripts/                # 🛠️ Utility scripts
+├── settings/               # ⚙️ Settings
+├── uploads/                # 📂 Local uploads
 ├── vendor/
+│   ├── phpmailer/
 │   └── tcpdf/
 │
-├── .env.example
 ├── .gitignore
+├── index.php
 └── README.md
 
 
-🗄️ قاعدة البيانات
+🗄️ Database
 
-يعتمد النظام على MySQL، ومن أهم الجداول:
+The project includes ready-to-use database scripts:
 
+database/
+├── schema.sql
+├── seed.sql
+├── migrate_utf8mb4.sql
+└── schema.sqlite.sql
 
 
-users
-
-roles
-
-permissions
-
-role_permissions
-
-customers
-
-invoices
-
-invoice_items
-
-payments
-
-invoice_number_sequences
-
-notifications
-
-audit_logs
-
-settings
-
-
-
-تم إعداد قاعدة البيانات باستخدام utf8mb4 لدعم اللغة العربية والبيانات متعددة اللغات.
-
-🔐 تسجيل الدخول والصلاحيات
-
-يحتوي النظام على نظام Role-Based Access Control (RBAC) لإدارة صلاحيات المستخدمين.
-
-
-
-الأدوار الأساسية:
-
-
-
-Admin — مدير النظام
-
-Finance — المالية
-
-Staff — الموظف
-
-
-
-ويتم التحكم في الوصول إلى الوظائف المختلفة من خلال الصلاحيات المحددة لكل مستخدم.
-
-💳 إدارة الفواتير والمدفوعات
-
-يدعم النظام:
-
-
-
-إضافة عدة عناصر للفاتورة
-
-حساب إجمالي الفاتورة
-
-حساب الضرائب
-
-تحديد تاريخ الاستحقاق
-
-تسجيل دفعات جزئية
-
-تسجيل أكثر من دفعة لنفس الفاتورة
-
-حساب الرصيد المتبقي
-
-متابعة حالة الدفع
-
-اكتشاف الفواتير المتأخرة
-
-
-
-وبذلك يمكن متابعة الفاتورة من لحظة إنشائها وحتى إتمام سدادها.
-
-📄 فواتير PDF
-
-يمكن للنظام إنشاء الفواتير بصيغة PDF باستخدام مكتبة TCPDF.
-
-
-
-كما يدعم محتوى الفواتير باللغة العربية، ويمكن استخدام ملفات PDF الناتجة للتحميل أو الإرسال عبر البريد الإلكتروني.
-
-📧 إرسال الفواتير عبر البريد الإلكتروني
-
-يدعم النظام إرسال الفواتير مباشرة عبر SMTP.
-
-
-
-يتم حفظ إعدادات البريد في ملف .env المحلي.
-
-
-
-مثال:
-
-MAIL_HOST=smtp.gmail.com
-MAIL_PORT=587
-MAIL_USERNAME=your-email@gmail.com
-MAIL_PASSWORD=your-app-password
-MAIL_ENCRYPTION=tls
-MAIL_FROM_ADDRESS=your-email@gmail.com
-MAIL_FROM_NAME="B2B Invoice & Payment Tracking System"
-
-
-⚠️ مهم جدًا: لا تقم برفع ملف .env الحقيقي إلى GitHub، ولا ترفع كلمات مرور SMTP أو Gmail App Password.
-
-⚙️ تشغيل المشروع محليًا
-
-1. تحميل المشروع
-
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-
-
-2. وضع المشروع داخل WAMP
-
-ضع المشروع داخل:
-
-C:\wamp64\www\
-
-
-مثال:
-
-C:\wamp64\www\b2b-invoice-payment-system
-
-
-3. إنشاء قاعدة البيانات
-
-أنشئ قاعدة بيانات باسم:
+The main MySQL database is:
 
 b2b_invoice
 
 
-ثم قم باستيراد ملفات قاعدة البيانات باستخدام phpMyAdmin.
+Main tables include:
 
-4. إعداد ملف البيئة
+users
+roles
+permissions
+role_permissions
+customers
+invoices
+invoice_items
+payments
+notifications
+audit_logs
+settings
 
-انسخ:
 
-.env.example
+🚀 Local Installation
+
+1️⃣ Requirements
+
+PHP 8.3+
+
+MySQL 8+ or compatible
+
+Apache / WAMP / XAMPP
+
+Modern web browser
+
+2️⃣ Create the Database
+
+Create:
+
+b2b_invoice
 
 
-إلى:
+Then import:
+
+database/schema.sql
+
+
+followed by:
+
+database/seed.sql
+
+
+3️⃣ Configure Environment
+
+Copy:
+
+config/.env.example
+
+
+to:
 
 .env
 
 
-ثم أدخل إعدادات قاعدة البيانات والبريد الخاصة بك.
+Then configure your local database and SMTP settings.
 
-5. فتح النظام
+🔐 Never commit the real .env file.
 
-بعد تشغيل WAMP، افتح:
+4️⃣ Run
+
+Start Apache and MySQL, then open:
 
 http://localhost/b2b-invoice-payment-system/app
 
 
+The URL may vary depending on your local WAMP configuration.
 
-📋 حالة المشروع الحالية
+📧 SMTP Configuration
 
-يحتوي النظام حاليًا على:
+Example:
+
+MAIL_HOST=smtp.example.com
+MAIL_PORT=587
+MAIL_USERNAME=your-email@example.com
+MAIL_PASSWORD=your-app-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email@example.com
+MAIL_FROM_NAME="B2B Invoice & Payment Tracking System"
 
 
+🔐 Never publish real SMTP passwords or App Passwords.
 
-إدارة العملاء
+🔐 Security
 
-إدارة الفواتير
-
-متابعة المدفوعات
-
-المدفوعات الجزئية
-
-إنشاء PDF
-
-إرسال الفواتير عبر البريد الإلكتروني
-
-الإشعارات
-
-التقارير
-
-تصدير CSV
-
-نظام RBAC
-
-سجل العمليات Audit Log
-
-واجهة عربية RTL
-
-تكامل فعلي مع MySQL
-
-🚀 حالة المشروع
-
-مشروع تطوير / Portfolio Project
+The project includes:
 
 
 
-تم تطوير النظام كتطبيق عملي لإدارة العمليات المالية الخاصة بالشركات، مع التركيز على إدارة الفواتير، متابعة المدفوعات، دعم اللغة العربية، وإدارة دورة الفاتورة بشكل متكامل.
+🔒 Environment variable protection.
+
+🔑 Password hashing.
+
+🛡️ Role-based access control.
+
+🧹 Server-side validation.
+
+🗄️ Prepared database queries.
+
+📝 Audit logging.
+
+🔐 Permission-based actions.
+
+📌 Project Status
+
+Status: Active Development 🚧
+
+
+
+The current system covers the main business workflow:
+
+Customers
+   ↓
+Invoices
+   ↓
+Payments
+   ↓
+Reports
+   ↓
+PDF
+   ↓
+Email
+   ↓
+Notifications
+   ↓
+Permissions & Audit Logs
+
 
 👨‍💻 Developer
 
-Awab Ibrahim Bashry
+Awab Bashary | AwabBuilds
 
 
 
-Software Developer | Web & Flutter Developer | AI Developer
+💻 Software Developer
+🌐 Web & Flutter Developer
+🤖 AI Developer
+📱 Building Modern Web, Mobile & AI Applications
+
+📜 License
+
+This project is licensed under the MIT License.
+
+🧾 B2B Invoice & Payment Tracking System
+
+Built with PHP, MySQL & Bootstrap 5 ❤️
 
 
 
-Building modern web, mobile, and AI applications.
-
-📄 License
-
-This project is intended for learning, development, and portfolio purposes.
-
-
-
-If you plan to use it commercially, review and define an appropriate license and deployment policy for your use case.
+Awab Bashary | AwabBuilds
